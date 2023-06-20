@@ -1,0 +1,573 @@
+/*
+*  html5resetcss
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+.header-menu {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    grid-area: nav;
+
+}
+
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "nav nav nav nav"
+        "main main main main"
+        "footer footer footer footer";
+    gap: 30px;
+}
+
+body {
+    background-image: url(../img/beach3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.body-ofertas {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    background-color: #fff;
+
+}
+
+
+.body-vuelos {
+    background-image: none;
+}
+
+.body-contacto {
+    background-image: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0707077a;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    margin-right: 30px;
+
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.4s all;
+}
+
+nav ul li:hover {
+    background-color: #c92222;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    line-height: 100px;
+    margin-right: 40px;
+    display: none;
+
+}
+
+#check {
+    display: none;
+}
+
+.main-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    padding: 2px;
+    margin: 3px;
+    background-color: transparent;
+    transition: transform .7s ease-in-out;
+}
+
+.main-logo:hover {
+    transform: rotate(360deg);
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(7, 7, 7);
+    width: 100%;
+    grid-area: footer;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10px;
+
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 5px;
+    height: 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+    margin: 10px;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+    background: #e95950;
+    color: white;
+}
+
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    font-family: 'Roboto Mono', monospace;
+    grid-area: main;
+    width: 800px;
+    height: auto;
+    padding: 20px;
+    place-self: center;
+    align-items: center;
+    justify-content: center;
+    margin: 230px;
+
+}
+
+.main-section-ofertas {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Mono', monospace;
+    grid-area: main;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    place-self: center;
+
+}
+
+.titulo-destino {
+    margin-top: 90px;
+}
+
+
+.main-section h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #724747;
+    font-size: 202px;
+    text-align: center;
+
+
+}
+
+.button {
+    padding: 20px;
+    background-color: #8c1c1c;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    width: 150px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #c92222;
+}
+
+
+.container-ofertas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 10px;
+    width: 100%;
+    align-items: center;
+
+}
+
+
+.oferta1 {
+    width: 100%;
+    text-align: center;
+}
+
+.oferta2 {
+    width: 95%;
+    text-align: center;
+}
+
+.img-ofertas {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    background-size: contain;
+    margin: 5px;
+    padding: 5px;
+}
+
+.container-titulo-ofertas {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    height: 50px;
+    font-size: 35px;
+    margin-bottom: 50px;
+
+    text-align: center;
+}
+
+.fondo-titulo-oferta {
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+
+
+/* SECCION VUELOS */
+
+
+.main-section-vuelos {
+    grid-area: main;
+    margin-top: 100px;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+
+
+.form-container {
+
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-container input[type="text"],
+.form-container select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.form-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* RESERVAS */
+.main-section-reservas {
+    display: flex;
+    justify-items: center;
+    grid-area: main;
+    margin-top: 100px;
+    font-family: 'Roboto Mono', monospace;
+    align-items: center;
+    justify-content: center;
+    margin: 180px;
+}
+
+.container-reservas {
+    width: 300px;
+    padding: 16px;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.container-reservas h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+.form-group button:hover {
+    background-color: #45a049;
+}
+
+
+/* CONTACTO */
+
+.container-contacto {
+    width: 20%;
+    margin: 0 auto;
+    font-family: 'Roboto Mono', monospace;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+label {
+    margin-top: 10px;
+}
+
+input,
+textarea {
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+.main-section-contacto {
+    display: flex;
+    justify-items: center;
+    grid-area: main;
+    margin-top: 100px;
+    font-family: 'Roboto Mono', monospace;
+    align-items: center;
+    justify-content: center;
+    margin: 180px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .main-section {
+        width: auto;
+        height: auto;
+        margin: 150px;
+        background-color: rgba(255, 0, 0, 0);
+    }
+
+    .main-section h1 {
+        font-size: 120px;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        display: none;
+        background-color: #28231c;
+        width: 100%;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        font-weight: 500;
+
+    }
+
+    #check:checked~ul {
+        right: 20;
+        display: block;
+    }
+
+    #check:checked~label {
+        transform: rotate(90deg);
+        transition: transform .4s ease-in-out;
+    }
+
+    nav {
+        height: 90px;
+    }
+
+    .body-ofertas {
+        background-image: none;
+        background-color: #fff;
+    }
+
+
+    .container-ofertas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        width: 100%;
+        height: auto;
+        align-items: center;
+        padding: 5px;
+        flex: 0;
+    }
+
+    .img-ofertas {
+        width: 100%;
+        height: 80%;
+        border-radius: 10px;
+        background-size: contain;
+        margin: 5px;
+    }
+
+    .header-menu {
+        display: flex;
+        position: unset;
+    }
+
+
+    .main-section-vuelos {
+        margin-top: 20px;
+    }
+
+    .main-section-ofertas {
+        margin-top: 25px;
+        width: 90%;
+    }
+
+    .main-section-reservas {
+        
+        margin: 80px 5px 150px 5px;
+    }
+
+    .form-container {
+        width: 80%;
+    }
+
+    .container-contacto {
+        width: 80%;
+    }
+    
+    .main-section-contacto{
+        margin: 80px 5px 150px 5px;
+    }
+
+    .titulo-destino {
+        margin-top: 30px;
+    }
+
+
+}
