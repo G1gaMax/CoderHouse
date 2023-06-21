@@ -470,7 +470,7 @@ textarea {
 
 /* RESPONSIVE */
 
-@media (max-width: 768px) {
+@media (max-width: 420px) {
 
     .main-section {
         width: auto;
