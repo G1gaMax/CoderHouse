@@ -1,29 +1,20 @@
-
-
-.main-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "nav nav nav nav"
-        "main main main main"
-        "footer footer footer footer";
-    gap: 30px;
-}
-
-body {
+.main-container-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: url(../img/beach3.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-}
+    background-size:cover;
+    }
+
+
 
 .body-ofertas {
     display: flex;
     flex-direction: column;
     background-image: none;
     background-color: #fff;
-
 }
 
 
@@ -34,46 +25,33 @@ body {
 .body-contacto {
     background-image: none;
 }
+
 .main-section {
     display: flex;
     flex-direction: column;
     border-radius: 8px;
     font-family: 'Roboto Mono', monospace;
     grid-area: main;
-    width: 800px;
+    width: 100%;
     height: auto;
-    padding: 20px;
     place-self: center;
     align-items: center;
     justify-content: center;
     margin: 230px;
 
-}
-
-.main-section-ofertas {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Roboto Mono', monospace;
-    grid-area: main;
-    width: 70%;
-    height: 100%;
-    align-items: center;
-    place-self: center;
-
+    h1 {
+        font-family: 'Bebas Neue', sans-serif;
+        // color: #724747;
+        color: #9D0208;
+        font-size: 202px;
+        text-align: center;
+    
+    
+    }
 }
 
 .titulo-destino {
     margin-top: 90px;
-}
-
-
-.main-section h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    color: #724747;
-    font-size: 202px;
-    text-align: center;
-
-
 }
 
 .button {
@@ -84,26 +62,40 @@ body {
     border-radius: 4px;
     width: 150px;
     text-align: center;
-}
 
-.button:hover {
-    background-color: #c92222;
-}
-
-
-@media (max-width: 420px) {
-
-    .main-section {
-        width: auto;
-        height: auto;
-        margin: 150px;
-        background-color: rgba(255, 0, 0, 0);
+    &:hover {
+        background-color: #DC2F02;
     }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
 
     .main-section h1 {
-        font-size: 120px;
+        font-family: 'Bebas Neue', sans-serif;
+        color: #724747;
+        font-size: 150px;
+        text-align: center;
     }
 
+    .main-container-index{
+        margin: 0px;
+        padding: 0px;
+        gap: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .main-container-index{
+        height: 100%;
+    }
+    .main-section h1 {
+        font-size: 100px;
+    }
+    .button {
+        padding: 15px;
+    }
     .checkbtn {
         display: block;
-    }} 
+    }
+}

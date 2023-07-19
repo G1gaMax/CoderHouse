@@ -1,41 +1,91 @@
+.main-container-ofertas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
 .container-ofertas {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin: 10px;
     width: 100%;
-    align-items: center;
+    margin: 50px;
+    border-radius: 10px;
+    gap: 25px;
+    padding: 10px;
 
 }
 
+.titulo-destino{
+    background-color: #03071E;
+    color: $base-color;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.main-section-ofertas {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Mono', monospace;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    place-self: center;
+
+}
 
 .oferta1 {
     width: 100%;
     text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .oferta2 {
-    width: 95%;
+    width: 100%;
     text-align: center;
+    margin-bottom: 10px;
+    border-radius: 8px;
+
+    h2{
+        background-color: $base-black;
+        color: white;
+        width: 100%;
+        border-radius: 6px 6px 0px 0px;
+        padding: 10px 0px 10px 0px;
+    }
+
+    p{
+        background-color: $base-black;
+        color: white;
+        width: 100%;
+        border-radius: 0px 0px 6px 6px;
+        padding: 5px 0px 5px 0px;
+        margin-top: -2px;
+    }
+
+    &:hover {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
 }
 
 .img-ofertas {
     width: 100%;
     height: 80%;
-    border-radius: 10px;
     background-size: contain;
-    margin: 5px;
-    padding: 5px;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
+
+
+    // &:hover {
+    //     -webkit-transform: scale(1.05);
+    //     transform: scale(1.05);
+    // }
+    
 }
 
-.img-ofertas:hover {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-}
 
 .container-titulo-ofertas {
     display: flex;
@@ -44,7 +94,6 @@
     height: 50px;
     font-size: 35px;
     margin-bottom: 50px;
-
     text-align: center;
 }
 
@@ -55,8 +104,22 @@
 
 }
 
+// Tablet size
 
-@media (max-width: 420px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+    .main-section-ofertas {
+        height: 100%;
+        width: 95%;
+        gap: 50px;
+    }
+
+    .main-container-ofertas {
+        height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
 
     .body-ofertas {
         background-image: none;
@@ -78,14 +141,22 @@
     .img-ofertas {
         width: 100%;
         height: 80%;
-        border-radius: 10px;
-        background-size: contain;
-        margin: 5px;
+      
     }
 
     .main-section-ofertas {
         margin-top: 25px;
         width: 90%;
+        gap: 15px;
+    }
+
+    .main-container-ofertas {
+
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        
+
     }
 
 }

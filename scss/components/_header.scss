@@ -1,19 +1,18 @@
 .header-menu {
     display: flex;
-    position: fixed;
     flex-direction: column;
     width: 100%;
     height: auto;
     background-size: cover;
     grid-area: nav;
-
 }
 
 
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: #0707077a;
+    // background-color: #0707077a;
+    background-color: #03071E;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -30,7 +29,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-    background-color: #c92222;
+    background-color: #DC2F02;
     border-radius: 8px;
     padding: 25px;
 }
@@ -71,7 +70,7 @@ nav ul li a {
 }
 
 
-@media (max-width: 420px) {
+@media (max-width: 768px) {
 
     ul {
         display: none;
