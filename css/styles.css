@@ -94,7 +94,7 @@ body {
 
 main {
   flex: auto;
-  background-color: #D3D0CB;
+  background-color: #10182c;
 }
 
 .header-menu {
@@ -131,8 +131,8 @@ nav ul li:hover {
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: #fff;
+  text-decoration: none !important;
+  color: #fff !important;
   padding: 30px;
   font-family: "Roboto Mono", monospace;
 }
@@ -198,7 +198,7 @@ nav ul li a {
 footer {
   display: flex;
   flex-direction: column;
-  background-color: rgb(7, 7, 7);
+  background-color: #03071E;
   width: 100%;
   grid-area: footer;
   height: 100px;
@@ -350,8 +350,7 @@ footer {
 }
 
 .titulo-destino {
-  background-color: #03071E;
-  color: #D3D0CB;
+  color: white;
   padding: 20px;
   border-radius: 10px;
 }
@@ -393,8 +392,9 @@ footer {
   color: white;
   width: 100%;
   border-radius: 0px 0px 6px 6px;
-  padding: 5px 0px 5px 0px;
+  padding: 8px 0px 8px 0px;
   margin-top: -2px;
+  font-size: 15px;
 }
 .oferta2:hover {
   -webkit-transform: scale(1.05);
@@ -427,10 +427,20 @@ footer {
   .main-section-ofertas {
     height: 100%;
     width: 95%;
-    gap: 50px;
+    gap: 30px;
   }
   .main-container-ofertas {
     height: 100%;
+  }
+  .img-ofertas {
+    width: 100%;
+    height: 80%;
+  }
+  .container-ofertas {
+    margin-top: 0px;
+  }
+  .oferta2 p {
+    font-size: 12px;
   }
 }
 @media (max-width: 768px) {
@@ -462,14 +472,32 @@ footer {
     justify-content: center;
     align-items: center;
   }
+  .oferta2 p {
+    font-size: 11px;
+  }
 }
 h4 {
   font-size: 10px !important;
 }
 
+.main-container-vuelos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-vuelos {
+  background-color: #03071E;
+  color: white;
+  border-radius: 6px 6px 0px 0px;
+  margin: 20px 0px 0px 0px;
+  padding: 15px;
+  width: 50%;
+}
+
 .wrapper {
-  max-width: 800px;
-  margin: 50px auto;
+  width: 50%;
 }
 
 .wrapper form {
@@ -610,7 +638,11 @@ input[type=date] {
 /* Media Queries */
 @media (max-width: 768px) {
   .wrapper {
-    margin: 10px;
+    width: 90%;
+    margin-bottom: 15px;
+  }
+  .titulo-vuelos {
+    width: 90%;
   }
   .wrapper form {
     padding: 20px;
@@ -629,6 +661,7 @@ input[type=date] {
 
 .titulo-actividades h1 {
   font-size: 80px;
+  color: white;
 }
 
 .main-section-actividades {
@@ -673,7 +706,7 @@ input[type=date] {
 }
 
 .text1 {
-  background-color: rgb(16, 16, 19);
+  background-color: #03071E;
   margin-top: -2px;
   padding: 5px;
   height: 160px;
@@ -771,25 +804,29 @@ input[type=date] {
     background-color: black;
     padding: 20px;
     color: white;
+    text-align: center;
   }
   .titulo-actividades h1 {
     display: none;
   }
 }
 .main-container-contacto {
+  display: flex;
+  flex-direction: column;
   margin: 20px;
+  align-items: center;
 }
 
 .container-contacto {
   font-family: "Roboto Mono", monospace;
-  background-color: #D3D0CB;
+  background-color: #10182c;
   margin: 20px;
   padding: 40px;
   width: 50%;
 }
 
 .contacto-map {
-  background-color: #D3D0CB;
+  background-color: #10182c;
   margin: 20px;
   padding: 40px;
   width: 50%;
@@ -798,6 +835,11 @@ input[type=date] {
 .titulo-contacto {
   font-size: 50px;
   font-family: "Roboto Mono", monospace;
+  background-color: #03071E;
+  color: white;
+  width: 30%;
+  padding: 15px;
+  border-radius: 6px;
 }
 
 h1 {
@@ -808,6 +850,8 @@ h1 {
 form {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  color: white;
 }
 
 label {
@@ -819,14 +863,13 @@ textarea {
   padding: 5px;
   margin-bottom: 10px;
   margin-top: 10px;
-  border: 1px solid #D3D0CB;
+  border: 1px solid #10182c;
   border-radius: 4px;
-  width: 100%;
 }
 
 input[type=submit] {
   background-color: #4CAF50;
-  color: black;
+  color: #03071E;
   cursor: pointer;
   border-radius: 6px;
   padding: 20px;
@@ -852,28 +895,33 @@ textarea {
 
 @media (max-width: 768px) {
   .container-contacto {
-    margin: 2px;
-    padding: 10px;
+    margin: 0px;
+    padding: 0px;
     width: 100%;
   }
   .main-section-contacto {
     display: flex;
     flex-direction: column;
+    padding: 0px;
   }
   .main-container-contacto {
     margin: 20px;
     justify-content: center;
   }
   .contacto-map {
-    background-color: #D3D0CB;
+    background-color: #10182c;
     margin: 0px 0px 10px 0px;
-    padding: 10px;
+    padding: 0px;
     width: 100%;
     height: 300px;
   }
   .titulo-contacto {
     font-size: 30px;
     font-family: "Roboto Mono", monospace;
+    padding: 5px 0px 0px 0px;
+    border-radius: 6px 6px 0px 0px;
+    margin-bottom: 5px;
+    width: 100%;
   }
 }
 

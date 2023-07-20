@@ -1,27 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-// /* Resetting */
-// * {
-//     padding: 0;
-//     margin: 0;
-//     box-sizing: border-box;
-//     font-family: 'Poppins', sans-serif;
-// }
-
-// body {
-//     background-color: #dcf4ff;
-// }
-
-
-
 h4{
     font-size: 10px !important;
-    
 }
 
+.main-container-vuelos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-vuelos{
+    background-color: $base-black;
+    color: white;
+    border-radius: 6px 6px 0px 0px;
+    margin: 20px 0px 0px 0px;
+    padding: 15px;
+    width: 50%;
+}
+
+
 .wrapper {
-    max-width: 800px;
-    margin: 50px auto;
+    width: 50% ;
 }
 
 .wrapper form {
@@ -166,9 +167,15 @@ input[type="date"] {
 /* Media Queries */
 @media(max-width: 768px) {
     .wrapper {
-        margin: 10px;
+        width: 90% ;
+        margin-bottom: 15px;
     }
 
+    .titulo-vuelos{
+
+        width: 90%;
+    }
+    
     .wrapper form {
         padding: 20px;
     }

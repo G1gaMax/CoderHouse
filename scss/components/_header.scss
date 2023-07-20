@@ -11,7 +11,6 @@
 nav {
     display: flex;
     justify-content: space-between;
-    // background-color: #0707077a;
     background-color: #03071E;
     align-items: center;
     flex-wrap: wrap;
@@ -35,8 +34,8 @@ nav ul li:hover {
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #fff;
+    text-decoration: none !important;
+    color: #fff !important;
     padding: 30px;
     font-family: 'Roboto Mono', monospace;
 }

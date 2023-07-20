@@ -1,5 +1,8 @@
 .main-container-contacto {
+    display: flex;
+    flex-direction: column;
     margin: 20px;
+    align-items: center;
 }
 
 
@@ -21,6 +24,12 @@
 .titulo-contacto {
     font-size: 50px;
     font-family: 'Roboto Mono', monospace;
+    background-color: $base-black;
+    color: white;
+    width: 30%;
+    padding: 15px;
+    border-radius: 6px;
+ 
 }
 
 h1 {
@@ -31,6 +40,8 @@ h1 {
 form {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    color: white;
 }
 
 label {
@@ -45,24 +56,21 @@ textarea {
     margin-top: 10px;
     border: 1px solid $base-color;
     border-radius: 4px;
-    width: 100%;
-
-
 }
 
 input[type="submit"] {
     background-color: #4CAF50;
-    color: black;
+    color: $base-black;
     cursor: pointer;
     border-radius: 6px;
     padding: 20px;
     font-size: 15px;
     font-family: 'Roboto Mono', monospace;
-
 }
 
 input[type="submit"]:hover {
     background-color: #45a049;
+  
 }
 
 
@@ -84,14 +92,15 @@ textarea {
 @media (max-width: 768px) {
 
     .container-contacto {
-        margin: 2px;
-        padding: 10px;
+        margin: 0px;
+        padding: 0px;
         width: 100%;
     }
 
     .main-section-contacto {
         display: flex;
         flex-direction: column;
+        padding: 0px;
     }
 
     .main-container-contacto {
@@ -102,14 +111,19 @@ textarea {
     .contacto-map {
         background-color: $base-color;
         margin: 0px 0px 10px 0px;
-        padding: 10px;
+        padding: 0px;
         width: 100%;
         height: 300px;
     }
 
+    
     .titulo-contacto {
         font-size: 30px;
         font-family: 'Roboto Mono', monospace;
+        padding: 5px 0px 0px 0px;
+        border-radius: 6px 6px 0px 0px;
+        margin-bottom: 5px;
+        width: 100%;
     }
 
 }
