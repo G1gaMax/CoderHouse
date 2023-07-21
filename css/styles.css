@@ -247,9 +247,10 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../img/beach3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: hsl(37, 49%, 92%);
+  background: linear-gradient(90deg, hsl(37, 49%, 92%) 0%, hsl(33, 32%, 56%) 100%);
+  background: -moz-linear-gradient(90deg, hsl(37, 49%, 92%) 0%, hsl(33, 32%, 56%) 100%);
+  background: -webkit-linear-gradient(90deg, hsl(37, 49%, 92%) 0%, hsl(33, 32%, 56%) 100%);
 }
 
 .body-ofertas {
@@ -270,19 +271,21 @@ footer {
 .main-section {
   display: flex;
   flex-direction: column;
-  border-radius: 8px;
+  border-radius: 0px 0px 0px 0px;
   font-family: "Roboto Mono", monospace;
-  grid-area: main;
-  width: 100%;
+  width: 45%;
   height: auto;
   place-self: center;
   align-items: center;
   justify-content: center;
   margin: 230px;
+  border-left: 1px groove #03071E;
+  border-bottom: 1px groove #03071E;
+  padding: 10px;
 }
 .main-section h1 {
   font-family: "Bebas Neue", sans-serif;
-  color: #9D0208;
+  color: #03071E;
   font-size: 202px;
   text-align: center;
 }
@@ -307,7 +310,7 @@ footer {
 @media (min-width: 768px) and (max-width: 1023px) {
   .main-section h1 {
     font-family: "Bebas Neue", sans-serif;
-    color: #724747;
+    color: #03071E;
     font-size: 150px;
     text-align: center;
   }
@@ -586,7 +589,6 @@ input[type=date] {
 
 .wrapper form .label::after {
   position: absolute;
-  /* background-color: #fff; */
   top: 5px;
   left: 0px;
   font-size: 0.9rem;
@@ -635,7 +637,6 @@ input[type=date] {
   margin: 2rem 0rem;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
   .wrapper {
     width: 90%;
@@ -835,7 +836,6 @@ input[type=date] {
 .titulo-contacto {
   font-size: 50px;
   font-family: "Roboto Mono", monospace;
-  background-color: #03071E;
   color: white;
   width: 30%;
   padding: 15px;
@@ -853,21 +853,17 @@ form {
   width: 100%;
   color: white;
 }
-
-label {
+form label {
   margin-top: 10px;
 }
-
-input,
-textarea {
+form input {
   padding: 5px;
   margin-bottom: 10px;
   margin-top: 10px;
   border: 1px solid #10182c;
   border-radius: 4px;
 }
-
-input[type=submit] {
+form input[type=submit] {
   background-color: #4CAF50;
   color: #03071E;
   cursor: pointer;
@@ -876,9 +872,11 @@ input[type=submit] {
   font-size: 15px;
   font-family: "Roboto Mono", monospace;
 }
-
-input[type=submit]:hover {
+form input[type=submit]:hover {
   background-color: #45a049;
+}
+form textarea {
+  height: 150px;
 }
 
 .main-section-contacto {
@@ -887,10 +885,6 @@ input[type=submit]:hover {
   font-family: "Roboto Mono", monospace;
   padding: 10px;
   justify-content: center;
-}
-
-textarea {
-  height: 150px;
 }
 
 @media (max-width: 768px) {

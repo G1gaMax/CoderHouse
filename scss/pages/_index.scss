@@ -3,10 +3,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/beach3.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    }
+    background: hsla(37, 49%, 92%, 1);
+    background: linear-gradient(90deg, hsla(37, 49%, 92%, 1) 0%, hsla(33, 32%, 56%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(37, 49%, 92%, 1) 0%, hsla(33, 32%, 56%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(37, 49%, 92%, 1) 0%, hsla(33, 32%, 56%, 1) 100%);
+    
+}
 
 
 
@@ -29,24 +31,26 @@
 .main-section {
     display: flex;
     flex-direction: column;
-    border-radius: 8px;
+    border-radius: 0px 0px 0px 0px;
     font-family: 'Roboto Mono', monospace;
-    grid-area: main;
-    width: 100%;
+    width: 45%;
     height: auto;
     place-self: center;
     align-items: center;
     justify-content: center;
     margin: 230px;
+    border-left :1px groove $base-black;
+    border-bottom :1px groove $base-black;
+    padding: 10px;
+
 
     h1 {
         font-family: 'Bebas Neue', sans-serif;
-        // color: #724747;
-        color: #9D0208;
+        color: $base-black;
         font-size: 202px;
         text-align: center;
-    
-    
+
+
     }
 }
 
@@ -68,33 +72,42 @@
     }
 }
 
+
+// Media query tablet 
+
 @media (min-width: 768px) and (max-width: 1023px) {
 
     .main-section h1 {
         font-family: 'Bebas Neue', sans-serif;
-        color: #724747;
+        color: $base-black;
         font-size: 150px;
         text-align: center;
     }
 
-    .main-container-index{
+    .main-container-index {
         margin: 0px;
         padding: 0px;
         gap: 0px;
     }
 }
 
+
+// Media query celular 
+
 @media (max-width: 768px) {
 
-    .main-container-index{
+    .main-container-index {
         height: 100%;
     }
+
     .main-section h1 {
         font-size: 100px;
     }
+
     .button {
         padding: 15px;
     }
+
     .checkbtn {
         display: block;
     }

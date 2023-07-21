@@ -111,7 +111,6 @@ input[type="date"] {
 
 .wrapper form .label::after {
     position: absolute;
-    /* background-color: #fff; */
     top: 5px;
     left: 0px;
     font-size: 0.9rem;
@@ -164,7 +163,9 @@ input[type="date"] {
 
 
 
-/* Media Queries */
+// Media query celular 
+
+
 @media(max-width: 768px) {
     .wrapper {
         width: 90% ;

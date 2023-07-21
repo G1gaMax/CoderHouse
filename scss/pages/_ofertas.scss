@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    
 
 }
 .container-ofertas {
@@ -104,8 +105,7 @@
     border-radius: 10px;
 
 }
-
-// Tablet size
+// Media query tablet 
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .main-section-ofertas {
@@ -135,6 +135,10 @@
         }
     }
 }
+
+
+// Media query celular 
+
 
 @media (max-width: 768px) {
 
