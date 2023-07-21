@@ -281,13 +281,17 @@ footer {
   margin: 230px;
   border-left: 1px groove #03071E;
   border-bottom: 1px groove #03071E;
-  padding: 10px;
+  padding: 10px 10px 25px 10px;
 }
 .main-section h1 {
   font-family: "Bebas Neue", sans-serif;
   color: #03071E;
   font-size: 202px;
   text-align: center;
+  transition: color 3s;
+}
+.main-section h1:hover {
+  color: #8c1c1c;
 }
 
 .titulo-destino {

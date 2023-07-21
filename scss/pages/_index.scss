@@ -41,7 +41,7 @@
     margin: 230px;
     border-left :1px groove $base-black;
     border-bottom :1px groove $base-black;
-    padding: 10px;
+    padding: 10px 10px 25px 10px;
 
 
     h1 {
@@ -49,10 +49,16 @@
         color: $base-black;
         font-size: 202px;
         text-align: center;
+        transition: color 3s;
 
-
+        &:hover{
+            color: #8c1c1c;
+        }
     }
+
 }
+
+
 
 .titulo-destino {
     margin-top: 90px;
